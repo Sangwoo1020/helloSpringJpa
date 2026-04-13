@@ -56,5 +56,10 @@
 
     <a class="btn" th:href="@{/products}">← 상품 목록으로 돌아가기</a>
 
+    <footer>
+        <p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 HH:mm:ss')
+        + '  |  학번: 2171205  |  성명: 김상우'}"></p>
+    </footer>
+
 </body>
 </html>
